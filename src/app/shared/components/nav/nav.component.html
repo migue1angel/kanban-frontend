@@ -1,8 +1,8 @@
-<p-menubar>
+<p-menubar styleClass="dark:bg-surface-900">
   <ng-template #start>
     <h1 class="text-4xl font-bold mx-3">Easy Task</h1>
-    <p-button size="small" (click)="toggleDarkMode()">
-      <span class="material-symbols-outlined"> menu </span>
+    <p-button size="small" [rounded]="true" (click)="toggleDarkMode()">
+      <span class="material-symbols-outlined" style="font-size: 1.2rem;"> {{modeIcon()}} </span>
     </p-button>
   </ng-template>
   <ng-template #end>

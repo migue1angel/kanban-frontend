@@ -17,9 +17,8 @@ interface SideItem {
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class SideItemsComponent {
-
-  protected icons = PrimeIcons
-  protected sideItems:SideItem[] = [
+  protected icons = PrimeIcons;
+  protected sideItems: SideItem[] = [
     {
       label: 'Dashboard',
       icon: 'dashboard',
@@ -27,7 +26,7 @@ export class SideItemsComponent {
     },
     {
       label: 'Boards',
-      icon: 'grading',  
+      icon: 'grading',
       route: 'board-list',
     },
     {

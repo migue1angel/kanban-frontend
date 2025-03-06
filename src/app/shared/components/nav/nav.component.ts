@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component, signal } from '@angular/core';
 import { MenubarModule } from 'primeng/menubar';
 import { BadgeModule } from 'primeng/badge';
 import { AvatarModule } from 'primeng/avatar';
@@ -18,10 +18,16 @@ import { ButtonModule } from 'primeng/button';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class NavComponent {
+  protected modeIcon = signal<string>('dark_mode');
+
   toggleDarkMode() {
     const element = document.querySelector('html');
     element!.classList.toggle('my-app-dark');
-  }
+    this.modeIcon.set(
+      element?.classList.contains('my-app-dark') ? 'light_mode' : 'dark_mode'
+    );
+    console.log(this.modeIcon());
+  } 
   items = [
     {
       label: 'Home',

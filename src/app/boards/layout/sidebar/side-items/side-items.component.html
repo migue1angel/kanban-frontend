@@ -1,12 +1,11 @@
-@for(item of sideItems; track $index){
-<li class="w-10/12 mx-auto list-none">
-  <a
-    [routerLink]="[item.route]"
-    routerLinkActive="active font-bold bg-primary text-black"
-    class="p-2 rounded-lg flex items-center"
-  >
-    <span class="material-symbols-outlined ml-2"> {{ item.icon }} </span>
-    <p class="ml-4">{{ item.label }}</p>
-  </a>
-</li>
-}
+<ul>
+  @for(item of sideItems; track $index){
+  <li class="w-10/12 mx-auto list-none">
+    <a [routerLink]="[item.route]" routerLinkActive="active bg-primary dark:text-black"
+      class="p-2 rounded-lg flex font-semibold items-center">
+      <span class="material-symbols-outlined ml-2"> {{ item.icon }} </span>
+      <p class="ml-4">{{ item.label }}</p>
+    </a>
+  </li>
+  }
+</ul>

@@ -1,11 +1,8 @@
 import {
-  AfterViewInit,
   ChangeDetectionStrategy,
   Component,
   effect,
-  HostListener,
   inject,
-  OnInit,
   PLATFORM_ID,
   signal,
 } from '@angular/core';
