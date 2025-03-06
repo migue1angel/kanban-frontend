@@ -14,10 +14,11 @@ import { SidebarService } from '../../services/sidebar.service';
 import { isPlatformBrowser } from '@angular/common';
 import { DrawerModule } from 'primeng/drawer';
 import { ButtonModule } from 'primeng/button';
+import { DividerModule } from 'primeng/divider';
 
 @Component({
   selector: 'boards-sidebar',
-  imports: [SideItemsComponent, DrawerModule, ButtonModule],
+  imports: [SideItemsComponent, DrawerModule, ButtonModule, DividerModule],
   templateUrl: './sidebar.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
 }) 

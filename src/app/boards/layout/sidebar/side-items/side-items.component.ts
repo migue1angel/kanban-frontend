@@ -22,13 +22,18 @@ export class SideItemsComponent {
   protected sideItems:SideItem[] = [
     {
       label: 'Dashboard',
-      icon: 'pi pi-home',
+      icon: 'dashboard',
       route: 'dashboard',
     },
     {
       label: 'Boards',
-      icon: 'pi pi-desktop',  
+      icon: 'grading',  
       route: 'board-list',
+    },
+    {
+      label: 'Calendar',
+      icon: 'calendar_month',
+      route: 'calendar',
     },
   ];
 }
