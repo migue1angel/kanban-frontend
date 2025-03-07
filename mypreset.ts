@@ -1,20 +1,20 @@
 import { definePreset } from '@primeng/themes';
-import theme from '@primeng/themes/lara';
+import theme from '@primeng/themes/aura';
 
 export const MyPreset = definePreset(theme, {
     semantic: {
         primary: {
-            50: '{lime.50}',
-            100: '{lime.100}',
-            200: '{lime.200}',
-            300: '{lime.300}',
-            400: '{lime.400}',
-            500: '{lime.500}',
-            600: '{lime.600}',
-            700: '{lime.700}',
-            800: '{lime.800}',
-            900: '{lime.900}',
-            950: '{lime.950}'
+            50: '{orange.50}',
+            100: '{orange.100}',
+            200: '{orange.200}',
+            300: '{orange.300}',
+            400: '{orange.400}',
+            500: '{orange.500}',
+            600: '{orange.600}',
+            700: '{orange.700}',
+            800: '{orange.800}',
+            900: '{orange.900}',
+            950: '{orange.950}'
         }
     }
 });
